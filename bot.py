@@ -12,7 +12,7 @@ from asyncio import sleep
 
 
 logging.basicConfig(level='INFO')
-bot = commands.Bot(command_prefix='u?')
+bot = commands.Bot(command_prefix='k!½')
 bot.remove_command('help')
 bot.load_extension("music")
 bot.load_extension("admin")
@@ -106,22 +106,22 @@ async def purge(ctx, number : int):
 @commands.cooldown(1, 5, commands.BucketType.user)
 @bot.command()
 async def help(ctx):
-    await ctx.send("""   ***Unknown Jr Commands:***
-**u?say** : Make the bot say whatever you want
-**u?ping** : Check the bot latency
-**u?search** : Search something on Google
-**u?avatar** : Get a player's avatar
-**u?8ball** : Ask the Magic 8-Ball)
-**u?playerinfo @<member>** : Get a member`s info
-**u?serverinfo** Get a guild/server info
-**u?botinfo** : Get the bot info
-**u?lenny** : Just a lenny face
-**u?respect** : Pay #respect)
-**u?kick** : Kick a member (works only if the player has the Kick perm.)
-**u?ban** : Ban a member (works only if the player has the Ban perm.)
-**u?mass** : Sends a message to all members in a guild (BOT Owner only)
-**u?shutdown** : Shuts down the bot (BOT Owner only)
-**u?purge** : Clears a number of messages (works only if the player has the Manage Channels perm.)
+    await ctx.send("""   ***xKing-_-BOTx Commands:***
+**k!say** : Make the bot say whatever you want
+**k!ping** : Check the bot latency
+**k!search** : Search something on Google
+**k!avatar** : Get a player's avatar
+**k!8ball** : Ask the Magic 8-Ball)
+**k!playerinfo @<member>** : Get a member`s info
+**k!serverinfo** Get a guild/server info
+**k!botinfo** : Get the bot info
+**k!lenny** : Just a lenny face
+**k!respect** : Pay #respect)
+**k!kick** : Kick a member (works only if the player has the Kick perm.)
+**k!ban** : Ban a member (works only if the player has the Ban perm.)
+**k!mass** : Sends a message to all members in a guild (BOT Owner only)
+**k!shutdown** : Shuts down the bot (BOT Owner only)
+**k!purge** : Clears a number of messages (works only if the player has the Manage Channels perm.)
 """)
 
 
@@ -139,7 +139,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def support(ctx):
-      await ctx.send('https://discord.gg/7H9FKNE')
+      await ctx.send('https://discord.gg/Xk6PDXu')
 
 
 @commands.cooldown(1, 5, commands.BucketType.user)
@@ -219,7 +219,7 @@ async def avatar(ctx, member: discord.Member=None):
 @bot.command()
 async def invite(ctx):
     em = discord.Embed(title="", color=discord.Colour.blue())
-    em.add_field(name="Invite ***Unknown Jr***", value='[Invite]( https://discordapp.com/api/oauth2/authorize?client_id=469047790094385174&permissions=8&scope=bot )')
+    em.add_field(name="Invite ***xKing-_-BOTx***", value='[Invite]( https://discordapp.com/api/oauth2/authorize?client_id=573128589273464832&permissions=8&scope=bot )')
     await ctx.send(embed=em)
 
 @commands.cooldown(1, 5, commands.BucketType.user)
@@ -326,9 +326,9 @@ async def presence():
                 if u.bot == False:
                     a = a + 1
 
-        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='%s users | u?help' % (len(bot.users))))
+        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='%s users | k!help' % (len(bot.users))))
         await sleep(30)
-        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='%s servers | u?help' % (len(bot.guilds))))
+        await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='%s servers | k!help' % (len(bot.guilds))))
         await sleep(30)
 
 
@@ -344,7 +344,7 @@ async def botinfo(ctx):
     em.add_field(name="Prefix", value=ctx.bot.command_prefix, inline=True)
     em.add_field(name="Made with", value='Python 3.6.5', inline=True)
     em.add_field(name="Tag:", value=ctx.me.discriminator, inline=True)
-    em.add_field(name="Creator", value='<@405337137735663618>', inline=True)
+    em.add_field(name="Creator", value='<@569808388297326593>', inline=True)
     em.add_field(name="Created at", value=ctx.bot.user.created_at, inline=True)
     em.set_thumbnail(url=ctx.me.avatar_url)
     msg = await ctx.send(embed=em)
@@ -364,7 +364,7 @@ async def binfo(ctx):
     em.add_field(name="Prefix", value=ctx.bot.command_prefix, inline=True)
     em.add_field(name="Made with", value='Python 3.6.5', inline=True)
     em.add_field(name="Tag:", value=ctx.me.discriminator, inline=True)
-    em.add_field(name="Creator", value='<@405337137735663618>', inline=True)
+    em.add_field(name="Creator", value='<@569808388297326593>', inline=True)
     em.add_field(name="Created at", value=ctx.bot.user.created_at, inline=True)
     em.set_thumbnail(url=ctx.me.avatar_url)
     msg = await ctx.send(embed=em)
